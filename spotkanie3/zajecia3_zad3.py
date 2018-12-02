@@ -2,7 +2,7 @@ nazwa_pliku = "test.txt"
 
 
 def statystyka(nazwa_pliku):
-    with open(nazwa_pliku,'r') as fh:
+    with open(nazwa_pliku, 'r') as fh:
         tekst = fh.read()
         liczba_znakow = "Liczba znaków: " + str(len(tekst))
         liczba_slow = "Liczba słów: " + str(len(tekst.split()))
