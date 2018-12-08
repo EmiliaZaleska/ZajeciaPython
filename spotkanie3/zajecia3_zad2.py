@@ -19,4 +19,4 @@ def przegladanie(root):
         przegladanie(os.path.join(root, dirname))
 
 
-przegladanie('.')
+przegladanie('D:\Program Files\Core Temp')

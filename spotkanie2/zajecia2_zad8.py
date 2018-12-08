@@ -17,5 +17,5 @@ def uprosc_zdanie(tekst, dl_slowa, liczba_slow):
 
 
 print(uprosc_zdanie(tekst, 10, 4))
-print(uprosc_zdanie(tekst, 4, 3))
+print(uprosc_zdanie(tekst, 10, 10))
 print(uprosc_zdanie(tekst, 8, 2))
