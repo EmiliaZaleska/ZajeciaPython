@@ -14,7 +14,7 @@ def statystyka(plik):
         tekst = tekst.replace(znak, "")
     tekst = tekst.split()
     slownik_wystapienia = {}
-    for slowo in sorted(tekst):
+    for slowo in tekst:
         if slowo not in slownik_wystapienia:
             slownik_wystapienia[slowo] = tekst.count(slowo)
     return slownik_wystapienia
