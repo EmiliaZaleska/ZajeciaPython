@@ -15,7 +15,8 @@ def statystyka(plik):
     tekst = tekst.split()
     slownik_wystapienia = {}
     for slowo in sorted(tekst):
-        slownik_wystapienia[slowo] = tekst.count(slowo)
+        if slowo not in slownik_wystapienia:
+            slownik_wystapienia[slowo] = tekst.count(slowo)
     return slownik_wystapienia
 
 
@@ -46,3 +47,4 @@ def porownanie(plik, plik_porownawczy, wartosc):
 
 
 porownanie(plik, plik_porownawczy, 2)
+
